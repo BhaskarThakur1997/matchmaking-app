@@ -9,7 +9,7 @@ st.title("💖 MatchAI - AI-Powered Matchmaking")
 user_name = st.text_input("Enter your name:")
 
 if st.button("Find Matches"):
-    response = requests.get("http://127.0.0.1:5000/get_matches")
+    response = requests.get("https://matchmaking-app-oi9z.onrender.com")
     if response.status_code == 200:
         matches = response.json()
         st.write(f"Hey {user_name}! Here are your best matches:")
